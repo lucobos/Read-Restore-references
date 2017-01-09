@@ -1,0 +1,32 @@
+Léeme
+
+ReadGlobales.c (compilado readglobales)
+Fichero de entrada: ficheroPCB.kicad_pcb
+Fichero de salida:  ficheroPCB-RelativasGlobales.csv
+
+Lee las referencias y sus posiciones relativas de todos los módulos de un layout fichero.kicad_pcb
+y las guarda en ficheroPCB-RelativasGlobales.csv
+
+La primera línea del fichero de salida contiene el número de huellas
+----------------------------------------------------------------------------------------------------
+
+Con el programa RestoreGlobales.c se recuperan esas posiciones.
+
+RestoreGlobales.c (compilado restoreglobales)
+Fichero de entrada 1: ficheroPCB.kicad_pcb
+Fichero de entrada 2: ficheroPCB-RelativasGlobales.cs
+
+Fichero de salida 1: ficheroPCB.kicad_pcbOld (original)
+Fichero de salida 2: ficheroPCB.kicad_pcb 
+
+----------------------------------------------------------------------------------------------------
+
+Uso principal:
+Después de haber posicionado la referencia de un módulo, si se actualiza el módulo la posición de la referencia se resetea.
+
+Si se hace una actualización global de todos los módulos, se pierden todas las posiciones de las referencias.
+Con ReadGlobales se pueden guardar las posiciones ANTES de actualizar los módulos.
+Con RestoreGlobales se recuperan la posiciones anteriores.
+
+-----------------------------------------------------------------------------------------------------------------------------
+

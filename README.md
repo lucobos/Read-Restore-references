@@ -23,7 +23,7 @@ Output file 2: filePCB.kicad_pcb
 ----------------------------------------------------------------------------------------------------
 
 Main use:
-After having positiones the reference of a module, if this module is updated its reference is reset to the default in library.
+After having positioned the reference of a module, if this module is updated its reference is reset to the default in library.
 
 If all footprints of the board are updated, all the reference's positions are updated to default.
 With ReadGlobales the relative reference positions can be saved BEFORE updating the modules.
